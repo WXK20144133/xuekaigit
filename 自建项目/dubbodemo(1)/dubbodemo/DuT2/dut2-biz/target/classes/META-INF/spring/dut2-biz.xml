@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+       <dubbo:application name="dut2-provider" owner="biu"/>
+       <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+       <dubbo:provider timeout="5000" retries="0" delay="-1"/>
+       <dubbo:protocol name="dubbo" serialization="kryo" optimizer="com.cl.api.util.SerializationOptimizerImpl"/>
+       <bean name="dut2Service" class="com.cl.biz.Dut2ServiceImpl"/>
+       <bean name="userService" class="com.cl.biz.UserServiceImpl"/>
+       <dubbo:service interface="com.cl.api.service.Dut2Service" ref="dut2Service" protocol="dubbo" cluster="failover"/>
+       <dubbo:service interface="com.cl.api.service.UserService" ref="userService" protocol="dubbo" cluster="failover"/>
+
+
+</beans>

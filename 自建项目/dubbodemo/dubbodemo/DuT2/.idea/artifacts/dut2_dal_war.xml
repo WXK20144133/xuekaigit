@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dut2-dal:war">
+    <output-path>$PROJECT_DIR$/dut2-dal/target</output-path>
+    <root id="archive" name="dut2-dal.war">
+      <element id="artifact" artifact-name="dut2-dal:war exploded" />
+    </root>
+  </artifact>
+</component>

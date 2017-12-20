@@ -1,0 +1,23 @@
+
+
+alipayConfig:
+  serverUrl:  "https://openapi.alipay.com/gateway.do"
+  appId:  "参数参数"
+  privateKey: "参数参数参数参数参数参数参数参数"
+  appPublicKey:  "参数参数参数参数参数参数参数参数参数参数"
+  publicKey: "参数参数参数参数参数参数参数参数参数参数参数参数"
+  charset:  "UTF-8"
+  signType: "RSA2"
+  format: "json"
+  notifyUrl: "回调地址"
+
+weChatConfig:
+  mchId: "参数参数参数参数"
+  appId: "参数参数参数参数参数参数"
+  key: "参数参数参数参数参数参数参数参数参数参数"
+  appSecret: "参数参数参数参数参数参数参数参数"
+  notifyUrl: "回调地址"
+  spbillCreateIp: "回调地址IP"
+
+server:
+  port: 8089

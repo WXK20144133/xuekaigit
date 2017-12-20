@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dut2-api" />
+        <module name="dut2-biz" />
+        <module name="dut2-dal" />
+        <module name="dut2-main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="DuT2" target="1.5" />
+      <module name="dut2-api" target="1.6" />
+      <module name="dut2-biz" target="1.6" />
+      <module name="dut2-dal" target="1.6" />
+      <module name="dut2-main" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
